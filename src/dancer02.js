@@ -1,4 +1,4 @@
-var BlinkyDancer = function (top, left, timeBetweenSteps) {
+var PopDancer = function (top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
   //  this.$node = $('<span class="dancer"></span>');
   //  this.timeBetweenSteps = timeBetweenSteps;
@@ -11,11 +11,11 @@ var BlinkyDancer = function (top, left, timeBetweenSteps) {
 };
 
 
-BlinkyDancer.prototype = Object.create(Dancer.prototype);
-BlinkyDancer.prototype.constructor = BlinkyDancer;
+PopDancer.prototype = Object.create(Dancer.prototype);
+PopDancer.prototype.constructor = PopDancer;
 
 
-BlinkyDancer.prototype.step = function () {
+PopDancer.prototype.step = function () {
   // call the old version of step at the beginning of any call to this new version of step
 
   Dancer.prototype.step.call(this);
