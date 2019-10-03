@@ -29,3 +29,9 @@ FightingDancer.prototype.step = function () {
   this.$node.toggle();
 
 };
+
+FightingDancer.prototype.lineUp = function(top, left) {
+
+  this.setPosition(top, left);
+
+};

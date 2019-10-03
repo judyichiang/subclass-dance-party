@@ -28,3 +28,9 @@ PopDancer.prototype.step = function () {
   this.$node.toggle();
 
 };
+
+PopDancer.prototype.lineUp = function(top, left) {
+
+  this.setPosition(top, left);
+
+};
