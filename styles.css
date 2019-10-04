@@ -3,8 +3,8 @@ body, html{
 }
 body{
   margin: 0px;
-  background: white url("https://cdn.vox-cdn.com/uploads/chorus_asset/file/16287568/Screen_Shot_2019_05_19_at_11.57.09_PM.png") no-repeat fixed 50% 80%;
-  background-size: 1920px 1200px;
+  background: white url("https://cdn.vox-cdn.com/uploads/chorus_asset/file/16287568/Screen_Shot_2019_05_19_at_11.57.09_PM.png") no-repeat fixed 50% 100%;
+  background-size: 2560px 1600px;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{

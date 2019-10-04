@@ -4,7 +4,9 @@ $(document).ready(function () {
   $('.lineUpButton').on('click', function (event) {
 
     for (var i = 0; i < window.dancers.length; i++) {
+      //for cleanup maybe have i multiplied differently based on dancers.length;
       var left = 500 + (i * 100);
+
       window.dancers[i].lineUp(800, left);
     }
 
@@ -22,7 +24,7 @@ $(document).ready(function () {
       if (window.dancers[i].constructor === PopDancer) {
 
         //position in the middle (popdancer)
-        var top = 500 + (walkerCounter * 50);
+        var top = 400 + (walkerCounter * 50);
         window.dancers[i].lineUp(top, 900);
 
         walkerCounter++;
@@ -31,7 +33,7 @@ $(document).ready(function () {
       if (window.dancers[i].constructor === BlinkyDancer) {
 
         //position in the left (blinky dancer)
-        var top = 500 + (starkCounter * 50);
+        var top = 400 + (starkCounter * 50);
         window.dancers[i].lineUp(top, 400);
 
         starkCounter++;
@@ -39,7 +41,7 @@ $(document).ready(function () {
       //if constructor is Targaryen (fightingdancer)
       if (window.dancers[i].constructor === FightingDancer) {
         //position in the right (fightingdancer)
-        var top = 500 + (targCounter * 50);
+        var top = 400 + (targCounter * 50);
         window.dancers[i].lineUp(top, 1400);
 
         targCounter++;
@@ -69,8 +71,10 @@ $(document).ready(function () {
 
     // make a dancer with a random position
 
+    var bodyHeight = $("body").height();
+
     var dancer = new dancerMakerFunction(
-      $("body").height() * Math.random(),
+      (bodyHeight - 400) * Math.random() + 400,
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
