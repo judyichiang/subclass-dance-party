@@ -50,6 +50,42 @@ $(document).ready(function () {
     }
   });
 
+  //on click
+  //check class
+  //remove class
+  //add new class(skull)
+
+  // $("span")
+  //   .mouseover(function () {
+  //     debugger;
+  //     // $( this ).find( "span" ).text( "mouse over x" + i );
+  //     $(this).addClass('death');
+  //   })
+  // .mouseout(function() {
+  //   $( this ).find( "span" ).text( "mouse out" );
+  // });
+  /// ----------------------------
+
+
+  $("span.dancer").hover(
+    function () {
+      debugger;
+      $(this).addClass('death');
+    }, function () {
+      $(this).removeClass('death');
+    }
+  );
+
+  // $("span.dancer").hover(function () {
+  //   $(this).fadeOut(100);
+  //   $(this).fadeIn(500);
+  // });
+
+
+
+
+  /// ---------------------------
+
   $('.addDancerButton').on('click', function (event) {
     /* This function sets up the click handlers for the create-dancer
      * buttons on dancefloor.html. You should only need to make one small change to it.

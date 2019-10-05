@@ -10,7 +10,16 @@ var FightingDancer = function (top, left, timeBetweenSteps) {
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
   // console.log('inside class:', this.$node)
+  this.$node.hover(
+    function () {
+      debugger;
+      $(this).addClass('death');
+      $(this).removeClass('fightingDancer')
 
+    }, function () {
+      $(this).removeClass('death');
+    }
+  );
 };
 
 
@@ -30,7 +39,7 @@ FightingDancer.prototype.step = function () {
 
 };
 
-FightingDancer.prototype.lineUp = function(top, left) {
+FightingDancer.prototype.lineUp = function (top, left) {
 
   this.setPosition(top, left);
 
