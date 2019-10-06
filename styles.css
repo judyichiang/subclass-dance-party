@@ -40,6 +40,9 @@ body, a:link, a:visited, a:active{
 
   animation-name: growingUp;
   animation-duration: .5s;
+  content:url(https://middle.pngfans.com/20190627/uv/game-of-thrones-pop-vinyl-2019-png-arya-stark-nigh-369501e8f68d7f4e.jpg);
+  width:100px;
+  height:100px;
 }
 
 @keyframes growingUp {
@@ -65,6 +68,9 @@ body, a:link, a:visited, a:active{
 
   animation-name: example2;
   animation-duration: .1s;
+  content:url(https://c7.uihere.com/files/227/407/790/daenerys-targaryen-night-king-melisandre-funko-stannis-baratheon-gamenight.jpg);
+  width:100px;
+  height:100px;
 
 }
 @keyframes example2 {
@@ -84,6 +90,9 @@ body, a:link, a:visited, a:active{
 
   animation-name: example;
   animation-duration: 1s;
+  content:url(https://i7.pngguru.com/preview/423/800/952/daenerys-targaryen-brienne-of-tarth-house-targaryen-tyrion-lannister-funko-game-of-thrones-tv-serial-thumbnail.jpg);
+  width:100px;
+  height:100px;
 
 }
 @keyframes example {
@@ -102,10 +111,10 @@ body, a:link, a:visited, a:active{
   height:100px;
 }
 
-
+/*
 https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1IgBP5Xb1BkQv1NX5LVAm0f08mjb-Uo1ZpSgIm1fIPbn_sbwmHQ
 
 https://www.bonbon.ee/3264-large_default/daenerys-targaryen-white-coat-vinyl-figure-9-cm-from-the-game-of-thrones-by-funko-pop.jpg
 
 
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDCwKhUSED9ikAYaDr9EgTsKsG-eMoeX2TtM6xI4IK3WAFRQno
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDCwKhUSED9ikAYaDr9EgTsKsG-eMoeX2TtM6xI4IK3WAFRQno */

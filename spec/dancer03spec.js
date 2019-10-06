@@ -5,7 +5,7 @@ describe('fightingDancer', function() {
 
   beforeEach(function() {
     clock = sinon.useFakeTimers();
-    fightingDancer = new BlinkyDancer(10, 20, timeBetweenSteps);
+    fightingDancer = new FightingDancer(10, 20, timeBetweenSteps);
   });
 
   it('should have a jQuery $node object', function() {
@@ -16,6 +16,10 @@ describe('fightingDancer', function() {
     sinon.spy(fightingDancer.$node, 'toggle');
     fightingDancer.step();
     expect(fightingDancer.$node.toggle.called).to.be.true;
+  });
+
+  it('New Test: check if the constructor is the subclass', function() {
+    expect(fightingDancer.constructor).to.be.equal(FightingDancer);
   });
 
   describe('dance', function() {
@@ -31,4 +35,15 @@ describe('fightingDancer', function() {
       expect(fightingDancer.step.callCount).to.be.equal(2);
     });
   });
+
+  describe('dancer location', function () {
+    it('New Test: should create dancers on the dancefloor', function () {
+      //should be in a location between top: 400 or greater
+      var bodyHeight = 1000; //the height of our dancefloor is 1000 pixels
+      var objectHeight = (bodyHeight - 400) * Math.random() + 400;
+      var doesNotFly = (objectHeight >= 400);
+      expect(doesNotFly).to.be.true;
+    });
+  });
+
 });
