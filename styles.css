@@ -1,103 +1,115 @@
-body, html{
-  height:100%;
+body, html {
+  height: 100%;
 }
-body{
+
+body {
   margin: 0px;
   background: white url("https://cdn.vox-cdn.com/uploads/chorus_asset/file/16287568/Screen_Shot_2019_05_19_at_11.57.09_PM.png") no-repeat fixed 50% 100%;
   background-size: 2560px 1600px;
   font-size: 18px;
 }
-body, a:link, a:visited, a:active{
+
+body, a:link, a:visited, a:active {
   color: lightblue;
 }
-.title, .addDancerButton{
-  padding:5px 12px;
-  float:right;
+
+.title, .addDancerButton {
+  padding: 5px 12px;
+  float: right;
 }
-.groupUpButton, .lineUpButton{
-  padding:5px 12px;
-  float:left;
+
+.groupUpButton, .lineUpButton {
+  padding: 5px 12px;
+  float: left;
 }
-.topbar{
-  height:32px;
+
+.topbar {
+  height: 32px;
   background-color: #555;
 }
-.title{
+
+.title {
   background-color: #777;
 }
-.dancer{
-  border:5px solid red;
-  border-radius:5px;
-  position:absolute;
+
+.dancer {
+  border: 5px transparent;
+  /* border-radius:5px; */
+  position: absolute;
 }
-.blinkyDancer{
-  border:10px solid red;
-  /* border-radius:10px; */
+
+.blinkyDancer {
+  /* border:10px solid red;
   position:absolute;
   height: 10px;
   width: 10px;
-  border-radius: 50%;
-
+  border-radius: 50%; */
   animation-name: growingUp;
   animation-duration: .5s;
-  content:url(https://middle.pngfans.com/20190627/uv/game-of-thrones-pop-vinyl-2019-png-arya-stark-nigh-369501e8f68d7f4e.jpg);
-  width:100px;
-  height:100px;
+  content: url(https://middle.pngfans.com/20190627/uv/game-of-thrones-pop-vinyl-2019-png-arya-stark-nigh-369501e8f68d7f4e.jpg);
+  width: 100px;
+  height: 100px;
 }
 
 @keyframes growingUp {
-  from {  height: 10px;
-          width: 10px;
-          border-radius: 50%;
-        }
-  to {height: 50px;
-      width: 50px;
-      border-radius: 50%;}
+  from {
+    height: 10px;
+    width: 10px;
+    /* border-radius: 50%; */
+  }
+  to {
+    height: 50px;
+    width: 50px;
+    /* border-radius: 50%; */
+  }
 }
 
-
-.popDancer{
-  /* border:10px solid rgb(55, 0, 255);
-  border-radius:10px; */
-  position:absolute;
+.popDancer {
+  /* position:absolute;
 	width: 0;
 	height: 0;
 	border-left: 25px solid transparent;
 	border-right: 25px solid transparent;
-  border-bottom: 50px solid blue;
-
+  border-bottom: 50px solid blue; */
   animation-name: example2;
   animation-duration: .1s;
-  content:url(https://c7.uihere.com/files/227/407/790/daenerys-targaryen-night-king-melisandre-funko-stannis-baratheon-gamenight.jpg);
-  width:100px;
-  height:100px;
-
+  content: url(https://c7.uihere.com/files/227/407/790/daenerys-targaryen-night-king-melisandre-funko-stannis-baratheon-gamenight.jpg);
+  width: 100px;
+  height: 100px;
 }
+
 @keyframes example2 {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-
-.fightingDancer{
-  border:10px solid rgb(56, 26, 83);
+.fightingDancer {
+  /* border:10px solid rgb(56, 26, 83);
   border-radius:10px;
   position:absolute;
   height: 50px;
   width: 50px;
-  /* background-color: darkorchid; */
+
   transform: rotate(45deg);
 
   animation-name: example;
-  animation-duration: 1s;
-  content:url(https://i7.pngguru.com/preview/423/800/952/daenerys-targaryen-brienne-of-tarth-house-targaryen-tyrion-lannister-funko-game-of-thrones-tv-serial-thumbnail.jpg);
-  width:100px;
-  height:100px;
-
+  animation-duration: 1s; */
+  content: url(https://i7.pngguru.com/preview/423/800/952/daenerys-targaryen-brienne-of-tarth-house-targaryen-tyrion-lannister-funko-game-of-thrones-tv-serial-thumbnail.jpg);
+  width: 100px;
+  height: 100px;
 }
+
 @keyframes example {
-  from {background-color: darkorchid;}
-  to {background-color: red;}
+  from {
+    background-color: darkorchid;
+  }
+  to {
+    background-color: red;
+  }
 }
 
 /* .dancer:hover .death{
@@ -105,10 +117,10 @@ body, a:link, a:visited, a:active{
 
 } */
 
-.death{
-  content:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1IgBP5Xb1BkQv1NX5LVAm0f08mjb-Uo1ZpSgIm1fIPbn_sbwmHQ);
-  width:100px;
-  height:100px;
+.death {
+  content: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1IgBP5Xb1BkQv1NX5LVAm0f08mjb-Uo1ZpSgIm1fIPbn_sbwmHQ);
+  width: 100px;
+  height: 100px;
 }
 
 /*
